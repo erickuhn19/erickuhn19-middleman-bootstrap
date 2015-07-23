@@ -1,0 +1,12 @@
+<% wrap_layout :layout do %>
+<div class="container">
+  <article>
+    <header>
+      <h1><%= current_article.title %></h1>
+      <time datetime="<%= current_article.date %>"><%= current_article.date.strftime('%b %e %Y') %> by Eric Kuhn</time>
+    </header>
+  </br>
+    <%= yield %>
+  </article>
+</div>
+<% end %>
