@@ -10,9 +10,9 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
-  blog.permalink = "/{title}.html"
+  blog.permalink = "/{title}"
   # Matcher for blog source files
-  # blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.sources = "articles/:title"
   # blog.taglink = "tags/{tag}.html"
   blog.layout = "blogposts"
   blog.summary_separator = /(READMORE)/
@@ -26,9 +26,9 @@ activate :blog do |blog|
   blog.calendar_template = "calendar.html"
 
   # Enable pagination
-  # blog.paginate = true
-  # blog.per_page = 10
-  # blog.page_link = "page/{num}"
+  blog.paginate = true
+  blog.per_page = 5
+  blog.page_link = "page/{num}"
 end
 
 page "/feed.xml", layout: false
