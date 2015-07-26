@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>erickuhn19</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="main" role="main">
+      <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">erickuhn19</a>
+    </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+ 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      <div class="container">
+  <article>
+    <header>
+      <h1>Ruby Basics Classes, Instance Variables and Initialize</h1>
+      <time datetime="2015-04-11 00:00:00 UTC">Apr 11 2015 by Eric Kuhn</time>
+    </header>
+  </br>
+    <p>I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language.</p>
+
+<p>To give some context of these three concepts lets define one additional term. A Local Variable is only accessible within the method it’s declared in. Meaning we can not call a local variable outside of the method it was created in. Lets look at an example:</p>
+
+<p><code>ruby
+def local_variable
+  x = 19
+  puts x
+end
+</code></p>
+
+<p>In this case x is our local variable and can not be called outside of the local_variable method. To use x we would need to call local_variable.</p>
+
+<p><code>ruby
+def to_s
+  “My Local Variable is #{local_variable}”
+end
+</code></p>
+
+<p>Ok, now we have established what a local variable is lets see what these other concepts are.</p>
+
+<h3 id="classes">Classes:</h3>
+
+<p>The Class in Ruby is like a production line that creates objects that have a unique state and a group of methods to call on those objects. The naming convention for classes always start with an uppercase method or known as CamelCase.</p>
+
+<h3 id="initialize-method">Initialize Method:</h3>
+
+<p>The Initialize Method is part of the Ruby magic. You don't actually call this method on an object, but Ruby calls it for you every time you use the New method for your class to create a new object. An example is coming.</p>
+
+<h3 id="instance-variable">Instance Variable:</h3>
+
+<p>This is why we defined what a Local Variable was earlier. An Instance Variable is how we store an object’s state in a Class. These variables can be used throughout the life of your object, but you need to call them differently. These variables start with the @ symbol. You also define your Instance Variables in the Initialize Method.</p>
+
+<p><code>ruby
+class Dog
+def initialize(name, energy=100)
+  @name = name
+  @energy = energy
+end
+</code></p>
+
+<p><code>ruby
+def to_s
+  “My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!”
+end
+</code></p>
+
+<p>So I just created an example class of Dog. When I want to create a new Dog, I would use the new method for the Dog class which will create a state in my instance variables which I defined in the initialize method.</p>
+
+<p><code>ruby
+Dexter = Dog.new(“Dexter”, 110)
+puts Dexter
+</code></p>
+
+<p>So using that one line of code I created a class object of Dexter who has two instance variables of @name and @health. When I call “puts Dexter”, the output will be “My dogs name is Dexter and he has 110% energy! This dog loves to play!”</p>
+
+<p>Take this example and try it for yourself in your text editor! <strong>Or go play with a dog that has lots of energy!</strong></p>
+
+  </article>
+      <div class="jumbotron-2">
+      <div class="container">
+          <h2 class="text-center">Receive my articles by email </p>
+        </br>
+            <form class="form-inline text-center" action="http://erickuhn19.us4.list-manage.com/subscribe/post" method="POST">
+              <div class="form-group input-group-lg">
+                <input type="hidden" name="u" value="9c56c0418442293daf66d0976">
+                <input type="hidden" name="id" value="ffea399064">
+                <input type="email" class="form-control" name="MERGE0" id="MERGE0" placeholder="your@email.com" autofocus>
+                <button id="submit" class="btn btn-primary btn-lg" >Sign Up &raquo;</button>
+              </div>
+            </form> 
+      </div>
+    </div>
+</div>
+
+      <footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a></p>
+    <p class="text-muted">Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by @erickuhn19</p>
+  </div>
+</footer>
+    </div>
+    
+  </body>
+</html>
+

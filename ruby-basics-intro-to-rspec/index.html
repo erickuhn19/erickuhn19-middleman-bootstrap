@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>erickuhn19</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="main" role="main">
+      <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">erickuhn19</a>
+    </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+ 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      <div class="container">
+  <article>
+    <header>
+      <h1>Ruby Basics Intro to RSpec</h1>
+      <time datetime="2015-04-13 00:00:00 UTC">Apr 13 2015 by Eric Kuhn</time>
+    </header>
+  </br>
+    <p>The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its <a href="http://rspec.info">website</a> as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code.</p>
+
+<p>Now the more you learn about Ruby and the Rails framework, you will see the debate in the community about which testing framework is better, RSpec or MiniTest. The best advice I’ve heard on this issue is as long as your testing, then your going in the right direction. I’ve chosen RSpec, but that doesn't mean you have to.</p>
+
+<p>Ok, so I’ve expanded the the class of Dog a bit by adding a few methods for playing and resting. To test out my code and practice on your own, create a new file called dog.rb. Tip, you can create a file in your command line like this.</p>
+
+<p><code>ruby
+touch dog.rb
+sublime dog.rb
+</code></p>
+
+<p>If your using Sublime thats a shortcut you can set up to have the file automatically open up. Going through the Finder directory is no fun. I used this <a href="http://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/">walk through</a> to set it up.</p>
+
+<p>Write out this code into your dog.rb file. You can copy and paste it but writing out each line is recommended to understand whats going on.</p>
+
+<p>```ruby
+class Dog
+  attr_reader :energy, :name
+  def initialize(name, energy=100)
+    @name = name.capitalize
+    @energy = energy
+  end</p>
+
+<p>def to_s
+    "My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!"
+  end</p>
+
+<p>def play
+    @energy -= 20
+    puts "#{@name} just ran around the yard! That dog is so fast!"
+  end</p>
+
+<p>def rest
+    @energy += 25
+    puts "#{@name} just took a nap. Dogs love to sleep."
+  end 
+end</p>
+
+<p>if <strong>FILE</strong> == $0
+  dog = Dog.new("Dexter", 110)
+  puts dog
+  puts dog.energy
+  puts dog.play
+  puts dog.rest
+end
+```</p>
+
+<p>Now we want to test this class using RSpec. As of this writing RSpec version is at 3.2. Start in your command line and run:</p>
+
+<p><code>ruby
+gem install rspec
+</code>
+To use RSpec create a new file named dog_spec.rb in the same folder you created dog.rb. The spec portion of the name is what RSpec looks for to run your tests. If you’ve forgotten how to create a file from the command line:</p>
+
+<p><code>ruby
+touch dog_spec.rb
+sublime dog_spec.rb
+</code></p>
+
+<p>Now we have our class created and we have a blank file to put our tests in, lets get to it. I’m going to give all the code at once, but its extremely helpful to go line by line adding the code into the file so you know what it does.</p>
+
+<p>```ruby
+require_relative 'dog'</p>
+
+<p>describe Dog do
+  before do
+    @initial_energy = 100
+    @dog = Dog.new("dexter", @initial_energy)
+  end</p>
+
+<p>it "has a capitalized name" do
+    expect(@dog.name).to eq("Dexter")
+  end</p>
+
+<p>it "has an initial energy set" do
+    expect(@dog.energy).to eq(100)
+  end</p>
+
+<p>it "has a string returned for the object" do
+    expect(@dog.to_s).to eq("My dogs name is Dexter and he has 100 % energy! This dog loves to play!")
+  end</p>
+
+<p>it "reduces energy by 20 when a dog plays" do
+    @dog.play
+    expect(@dog.energy).to eq(@initial_energy - 20)
+  end</p>
+
+<p>it "increases energy by 25 when a dog rests" do
+    @dog.rest
+    expect(@dog.energy).to eq(@initial_energy +25)
+  end</p>
+
+<p>context "create a dog with default energy" do
+    before do
+      @dog = Dog.new("dexter")
+    end</p>
+
+<pre class="highlight plaintext"><code>it "has a default energy of 100" do
+  expect(@dog.energy).to eq(100)
+end   end end ```
+</code></pre>
+
+<p>The first thing this RSpec file needs to do is require the file we are testing, the dog.rb file. Then on line 3 we start using the basic structure of the testing framework which is supposed to express concepts like a conversation. I translate this first line into “Please describe the Class of Dog doing these things”.</p>
+
+<p>The block of code that starts on line 4 runs before each testing scenario that starts with “it”. This “before do” basically creates the environment for us to test a specific use case. Instead of typing out this each time we run a scenario it can automatically run for each test case. This conforms to the DRY principle in programming, or Don’t Repeat Yourself.</p>
+
+<p>Ok, so test scenario 1 is saying a statement of “it has a capitalized name”. One thing I need to say here, please don't ever call a dog an “it”, that would not be cool! It is referring to the object we are testing and this is the only time where this would be ok. Anyway, keeping the literal translation going I would translate the next line to say “it (the dog) has a capitalized name, do this test, we expect when you call the dog’s name, it will show up as ‘Dexter’ ”. Thats a pretty simple formula to follow, right? The line for “it” states the statement we are trying to test, “expect” is giving the exact parameter we want to see, “.to” wants to see a true value and “eq” is saying the output should equal “Dexter”.</p>
+
+<p>To actually see this test file run, go back to your command line and you can run any one of the following three commands. Try each one out to see which format you like the best.</p>
+
+<p><code>ruby
+rspec dog_spec.rb
+rspec dog_spec.rb —color
+rspec dog_spec.rb —color —format doc
+</code></p>
+
+<p>Thanks for following along to my simple introduction to RSpec!</p>
+
+  </article>
+      <div class="jumbotron-2">
+      <div class="container">
+          <h2 class="text-center">Receive my articles by email </p>
+        </br>
+            <form class="form-inline text-center" action="http://erickuhn19.us4.list-manage.com/subscribe/post" method="POST">
+              <div class="form-group input-group-lg">
+                <input type="hidden" name="u" value="9c56c0418442293daf66d0976">
+                <input type="hidden" name="id" value="ffea399064">
+                <input type="email" class="form-control" name="MERGE0" id="MERGE0" placeholder="your@email.com" autofocus>
+                <button id="submit" class="btn btn-primary btn-lg" >Sign Up &raquo;</button>
+              </div>
+            </form> 
+      </div>
+    </div>
+</div>
+
+      <footer class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a></p>
+    <p class="text-muted">Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by @erickuhn19</p>
+  </div>
+</footer>
+    </div>
+    
+  </body>
+</html>
+

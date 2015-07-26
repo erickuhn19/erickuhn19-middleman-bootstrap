@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-04-12T20:00:00-04:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Ruby Basics Intro to RSpec</title>
+    <link rel="alternate" href="http://blog.url.com/ruby-basics-intro-to-rspec/"/>
+    <id>http://blog.url.com/ruby-basics-intro-to-rspec/</id>
+    <published>2015-04-12T20:00:00-04:00</published>
+    <updated>2015-07-26T17:51:23-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its &lt;a href="http://rspec.info"&gt;website&lt;/a&gt; as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code.&lt;/p&gt;
+
+&lt;p&gt;Now the more you learn about Ruby and the Rails framework, you will see the debate in the community about which testing framework is better, RSpec or MiniTest. The best advice I’ve heard on this issue is as long as your testing, then your going in the right direction. I’ve chosen RSpec, but that doesn't mean you have to.&lt;/p&gt;
+
+&lt;p&gt;Ok, so I’ve expanded the the class of Dog a bit by adding a few methods for playing and resting. To test out my code and practice on your own, create a new file called dog.rb. Tip, you can create a file in your command line like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+touch dog.rb
+sublime dog.rb
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If your using Sublime thats a shortcut you can set up to have the file automatically open up. Going through the Finder directory is no fun. I used this &lt;a href="http://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/"&gt;walk through&lt;/a&gt; to set it up.&lt;/p&gt;
+
+&lt;p&gt;Write out this code into your dog.rb file. You can copy and paste it but writing out each line is recommended to understand whats going on.&lt;/p&gt;
+
+&lt;p&gt;```ruby
+class Dog
+  attr_reader :energy, :name
+  def initialize(name, energy=100)
+    @name = name.capitalize
+    @energy = energy
+  end&lt;/p&gt;
+
+&lt;p&gt;def to_s
+    "My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!"
+  end&lt;/p&gt;
+
+&lt;p&gt;def play
+    @energy -= 20
+    puts "#{@name} just ran around the yard! That dog is so fast!"
+  end&lt;/p&gt;
+
+&lt;p&gt;def rest
+    @energy += 25
+    puts "#{@name} just took a nap. Dogs love to sleep."
+  end 
+end&lt;/p&gt;
+
+&lt;p&gt;if &lt;strong&gt;FILE&lt;/strong&gt; == $0
+  dog = Dog.new("Dexter", 110)
+  puts dog
+  puts dog.energy
+  puts dog.play
+  puts dog.rest
+end
+```&lt;/p&gt;
+
+&lt;p&gt;Now we want to test this class using RSpec. As of this writing RSpec version is at 3.2. Start in your command line and run:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+gem install rspec
+&lt;/code&gt;
+To use RSpec create a new file named dog_spec.rb in the same folder you created dog.rb. The spec portion of the name is what RSpec looks for to run your tests. If you’ve forgotten how to create a file from the command line:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+touch dog_spec.rb
+sublime dog_spec.rb
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have our class created and we have a blank file to put our tests in, lets get to it. I’m going to give all the code at once, but its extremely helpful to go line by line adding the code into the file so you know what it does.&lt;/p&gt;
+
+&lt;p&gt;```ruby
+require_relative 'dog'&lt;/p&gt;
+
+&lt;p&gt;describe Dog do
+  before do
+    @initial_energy = 100
+    @dog = Dog.new("dexter", @initial_energy)
+  end&lt;/p&gt;
+
+&lt;p&gt;it "has a capitalized name" do
+    expect(@dog.name).to eq("Dexter")
+  end&lt;/p&gt;
+
+&lt;p&gt;it "has an initial energy set" do
+    expect(@dog.energy).to eq(100)
+  end&lt;/p&gt;
+
+&lt;p&gt;it "has a string returned for the object" do
+    expect(@dog.to_s).to eq("My dogs name is Dexter and he has 100 % energy! This dog loves to play!")
+  end&lt;/p&gt;
+
+&lt;p&gt;it "reduces energy by 20 when a dog plays" do
+    @dog.play
+    expect(@dog.energy).to eq(@initial_energy - 20)
+  end&lt;/p&gt;
+
+&lt;p&gt;it "increases energy by 25 when a dog rests" do
+    @dog.rest
+    expect(@dog.energy).to eq(@initial_energy +25)
+  end&lt;/p&gt;
+
+&lt;p&gt;context "create a dog with default energy" do
+    before do
+      @dog = Dog.new("dexter")
+    end&lt;/p&gt;
+
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;it "has a default energy of 100" do
+  expect(@dog.energy).to eq(100)
+end   end end ```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first thing this RSpec file needs to do is require the file we are testing, the dog.rb file. Then on line 3 we start using the basic structure of the testing framework which is supposed to express concepts like a conversation. I translate this first line into “Please describe the Class of Dog doing these things”.&lt;/p&gt;
+
+&lt;p&gt;The block of code that starts on line 4 runs before each testing scenario that starts with “it”. This “before do” basically creates the environment for us to test a specific use case. Instead of typing out this each time we run a scenario it can automatically run for each test case. This conforms to the DRY principle in programming, or Don’t Repeat Yourself.&lt;/p&gt;
+
+&lt;p&gt;Ok, so test scenario 1 is saying a statement of “it has a capitalized name”. One thing I need to say here, please don't ever call a dog an “it”, that would not be cool! It is referring to the object we are testing and this is the only time where this would be ok. Anyway, keeping the literal translation going I would translate the next line to say “it (the dog) has a capitalized name, do this test, we expect when you call the dog’s name, it will show up as ‘Dexter’ ”. Thats a pretty simple formula to follow, right? The line for “it” states the statement we are trying to test, “expect” is giving the exact parameter we want to see, “.to” wants to see a true value and “eq” is saying the output should equal “Dexter”.&lt;/p&gt;
+
+&lt;p&gt;To actually see this test file run, go back to your command line and you can run any one of the following three commands. Try each one out to see which format you like the best.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+rspec dog_spec.rb
+rspec dog_spec.rb —color
+rspec dog_spec.rb —color —format doc
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks for following along to my simple introduction to RSpec!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ruby Basics Classes, Instance Variables and Initialize</title>
+    <link rel="alternate" href="http://blog.url.com/ruby-basics-classes-instance-variables-and-initialize/"/>
+    <id>http://blog.url.com/ruby-basics-classes-instance-variables-and-initialize/</id>
+    <published>2015-04-10T20:00:00-04:00</published>
+    <updated>2015-07-26T17:49:33-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language.&lt;/p&gt;
+
+&lt;p&gt;To give some context of these three concepts lets define one additional term. A Local Variable is only accessible within the method it’s declared in. Meaning we can not call a local variable outside of the method it was created in. Lets look at an example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+def local_variable
+  x = 19
+  puts x
+end
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In this case x is our local variable and can not be called outside of the local_variable method. To use x we would need to call local_variable.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+def to_s
+  “My Local Variable is #{local_variable}”
+end
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok, now we have established what a local variable is lets see what these other concepts are.&lt;/p&gt;
+
+&lt;h3 id="classes"&gt;Classes:&lt;/h3&gt;
+
+&lt;p&gt;The Class in Ruby is like a production line that creates objects that have a unique state and a group of methods to call on those objects. The naming convention for classes always start with an uppercase method or known as CamelCase.&lt;/p&gt;
+
+&lt;h3 id="initialize-method"&gt;Initialize Method:&lt;/h3&gt;
+
+&lt;p&gt;The Initialize Method is part of the Ruby magic. You don't actually call this method on an object, but Ruby calls it for you every time you use the New method for your class to create a new object. An example is coming.&lt;/p&gt;
+
+&lt;h3 id="instance-variable"&gt;Instance Variable:&lt;/h3&gt;
+
+&lt;p&gt;This is why we defined what a Local Variable was earlier. An Instance Variable is how we store an object’s state in a Class. These variables can be used throughout the life of your object, but you need to call them differently. These variables start with the @ symbol. You also define your Instance Variables in the Initialize Method.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+class Dog
+def initialize(name, energy=100)
+  @name = name
+  @energy = energy
+end
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+def to_s
+  “My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!”
+end
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So I just created an example class of Dog. When I want to create a new Dog, I would use the new method for the Dog class which will create a state in my instance variables which I defined in the initialize method.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+Dexter = Dog.new(“Dexter”, 110)
+puts Dexter
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So using that one line of code I created a class object of Dexter who has two instance variables of @name and @health. When I call “puts Dexter”, the output will be “My dogs name is Dexter and he has 110% energy! This dog loves to play!”&lt;/p&gt;
+
+&lt;p&gt;Take this example and try it for yourself in your text editor! &lt;strong&gt;Or go play with a dog that has lots of energy!&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ruby Basics puts yo self</title>
+    <link rel="alternate" href="http://blog.url.com/ruby-basics-puts-yo-self/"/>
+    <id>http://blog.url.com/ruby-basics-puts-yo-self/</id>
+    <published>2015-04-08T20:00:00-04:00</published>
+    <updated>2015-07-26T17:47:14-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;As soon as you start to learn the Ruby programming language you hear about this “puts” thing. Puts right away is used and is pretty cool. When you want to “put” something to the screen, you runs puts.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+puts “Eric knows Ruby!”
+puts “Hello World”
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Well “puts” is a method if you were wondering. Now that might not make a whole lot of sense since you probably learned that all methods are called on objects. Something like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+name = “eric”
+name.upcase
+&lt;/code&gt;
+My method upcase was called on the object of name. So puts is a method but where is its object?&lt;/p&gt;
+
+&lt;p&gt;Intro to self.&lt;/p&gt;
+
+&lt;p&gt;Anytime there isn't an object referenced on the left hand side, Ruby references a variable called self. Self will always reference the current object. Self is a global object and its value is main. If you run:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+self.class
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You get Object. We found out object! Makes sense now?&lt;/p&gt;
+
+&lt;p&gt;Wrap up: “puts” is a method, its called on a object and is stored in self. All methods are called on objects even if you don't see it.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Ruby Basics Double Quoted Strings</title>
+    <link rel="alternate" href="http://blog.url.com/ruby-basics-double-quoted-strings/"/>
+    <id>http://blog.url.com/ruby-basics-double-quoted-strings/</id>
+    <published>2015-04-08T20:00:00-04:00</published>
+    <updated>2015-07-26T17:45:48-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;For all intensive purposes I only use double quoted strings. I highly recommend taking a look at &lt;a href="https://github.com/thoughtbot/guides/tree/master/style/ruby"&gt;ThoughtBot’s Ruby Style Guide&lt;/a&gt; which I am echoing here, but lets take a quick at look why we should use double quoted strings.&lt;/p&gt;
+
+&lt;p&gt;Lets say I have two variables:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+name = “Eric”
+bitcoin = 100
+&lt;/code&gt;
+If I have single quoted strings and I want to use both variables I have to use concatenation. Which means using the “+” symbol to add two strings together. Well I can quickly run into errors if I’m not careful.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+puts ‘My name is ‘ + name + ‘and I have ‘ + bitcoin ‘bitcoins.’
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We will get an error message if we run this code. Specifically a TypeError of 'no implicit conversion of Fixnum into String'. The reason we get this error is the variable, bitcoin = 100, is a fixnum, which is just an integer, and this can't be called without using the string version. So lets see how this is done correctly.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+puts ‘My name is ‘ + name + ‘and I have ‘ + bitcoin.to_s ‘bitcoins.’
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Not a huge difference but something you have to remember and its more typing. Now lets see this refactored using double quotes. What does refactoring mean? Its the process of altering existing code internally to make it better without altering what that code does external. We will change the code but it will still have the same result.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+puts “My name is #{name} and I have #{bitcoin} bitcoins.”
+&lt;/code&gt;
+Using the double quoted strings and using a technique called interpolation, it automatically converts the variable into a string so we can run it without errors. Interpolation just allows Ruby code to appear evaluated within the string.&lt;/p&gt;
+
+&lt;p&gt;If we wanted to say I had double the bitcoins then the hardcoded variable, we could just do:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+puts “My name is #{name} and I have #{bitcoin * 2} bitcoins.”
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Another quick tip if you are writing this code out in your Sublime Text editor (on a Mac) and you want to see if the code will run, just hit command + B. This will run the code right in the text editor without jumping to the command line. You can also test this out in IRB as well. To get to IRB, just hit IRB in the command line and typing out (exit) will get you out.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>My First Open Source Project rails blogger engine</title>
+    <link rel="alternate" href="http://blog.url.com/my-first-open-source-project-rails-blogger-engine/"/>
+    <id>http://blog.url.com/my-first-open-source-project-rails-blogger-engine/</id>
+    <published>2015-04-03T20:00:00-04:00</published>
+    <updated>2015-07-26T17:44:06-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;In the final weeks of Codecademy Labs we had to break off into teams, and choose a final project that will be presented on the last day. My mind instantly raced about what project I would choose. We only had two weeks to complete the project and this is a part time course. Did I want to build one of my pet projects I’ve been planning? Not really, I didn't want to rush one of those. Maybe I could just think of some small idea and hack it together with a team in two weeks, only to never use it again. That didn't sound like a good idea either. Then I thought it would be really cool to start some open source project and then be able to continue working on it after the class ended. Create something that not only would be an interesting final project but something real people could use. And maybe other people in the class would eventually contribute to it.&lt;/p&gt;
+
+&lt;p&gt;So me and my teammate, &lt;a href="https://github.com/meghart"&gt;Meg&lt;/a&gt;, started working on the idea. At first, we wanted to build a super simple authentication gem that could be used instead of Devise for personal blogs created in Rails (like this site). We started going through the tedious trial and error process to build a gem. Can I be honest here? I think gem building is probably the weakest area of documentation. OK, I just had to say it. Anyway, so there is multiple ways to build a gem. You can use bundler, you can create a plugin or you can make a mountable engine.&lt;/p&gt;
+
+&lt;p&gt;After we had a good sense on how the different types of gems were made, we began asking ourselves what we were trying to accomplish? A simple authentication gem for a rails blog! Does that mean the only thing the rails app has is a blog or is this just a piece of a bigger rails app? We wanted this gem to have a future and a future where I would want to use this in future applications. We needed to think bigger.&lt;/p&gt;
+
+&lt;p&gt;We ultimately decided to build a blogging gem for Rails that encompasses all of the pieces needed to just bolt on a blog to your rails app. Its called &lt;a href="https://rubygems.org/gems/rails_blogger_engine/"&gt;Rails_Blogger_Engine&lt;/a&gt;. That eventually includes our original idea of simple authentication. We didn't get there in the gem’s 1.0 release for the project, but its definitely included in the projects roadmap.&lt;/p&gt;
+
+&lt;p&gt;If you’re reading this and want to contribute to an open source project. Check out the features we think would be cool to add to this project. If you have your own ideas then just &lt;a href="https://github.com/erickuhn19/rails_blogger_engine"&gt;submit a pull request&lt;/a&gt; and we’ll see if it works.&lt;/p&gt;
+
+&lt;h3 id="feature-list"&gt;Feature List&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Initializers to push views &amp;amp; controllers to app&lt;/li&gt;
+  &lt;li&gt;Bootstrap template&lt;/li&gt;
+  &lt;li&gt;Markdown with syntax highlighting&lt;/li&gt;
+  &lt;li&gt;Simple authentication (Create admins on the rails console, no views for creating users)&lt;/li&gt;
+  &lt;li&gt;Google ReCaptcha for comment spam&lt;/li&gt;
+  &lt;li&gt;Comment form by clicking button through jQuery&lt;/li&gt;
+  &lt;li&gt;URL’s created through title of post&lt;/li&gt;
+  &lt;li&gt;SEO&lt;/li&gt;
+  &lt;li&gt;Pagination&lt;/li&gt;
+  &lt;li&gt;Tests!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anything else that you can think of!&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Stop Breaking Your Workflow, Meet Dash, The Documentation App For Mac</title>
+    <link rel="alternate" href="http://blog.url.com/stop-breaking-your-workflow-meet-dash-the-documentation-app-for-mac/"/>
+    <id>http://blog.url.com/stop-breaking-your-workflow-meet-dash-the-documentation-app-for-mac/</id>
+    <published>2015-03-06T19:00:00-05:00</published>
+    <updated>2015-07-26T17:37:06-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;One of the major flaws in my development as a programmer has been access to information without bogging me down. I live in the Rails documentation and have kept it as a tab in my browser for five months now. Lately, I’ve had a need to not only look up the Rails docs but HTML, Bootstrap, Angular, jQquery, jQuery UI and a few others. Needless to say managing five plus tabs in order to sort through documentation is cumbersome and really hinders progress. Too many open tabs in general is a problem for me, but can I fix this one?&lt;/p&gt;
+
+&lt;p&gt;I came across an article by Justin Weiss &lt;a href="http://www.justinweiss.com/blog/2015/02/09/keeping-rails-questions-from-slowing-you-down/"&gt;“How to Keep Rails Questions From Killing Your Productivity”&lt;/a&gt;. It was exactly the article I’ve been looking for to help me streamline my documentation look ups. There has been situations where I came across a term and I wanted to quickly look it up so I understood what it meant, but decided against it so I wouldn't break my flow. Now I have a tool to help me do this.&lt;/p&gt;
+
+&lt;p&gt;It’s called &lt;a href="http://kapeli.com/dash"&gt;Dash by Kapeli&lt;/a&gt;. I’m currently using the free version and so far it works great. If it forces me to pay to keep access, I most surely will because of the time this app will save me. So far I downloaded the following documentation guides:&lt;/p&gt;
+
+&lt;p&gt;*Ruby on Rails 4
+*Bootstrap 3
+*jQuery
+*jQuery UI
+*HTML
+*Sass
+*Ruby 2
+*CoffeeScript
+*EmberJS
+*AngularJS&lt;/p&gt;
+
+&lt;p&gt;Even if I’m offline I will still have the documentation to search through. The best feature is definitely the Global Search Shortcut, and I took the advice from the article and made it option/space. I can quickly type this shortcut and have the app pop up and can make a search through multiple documentations. Once I find my answer, I quickly hit the same shortcut and the app disappears.&lt;/p&gt;
+
+&lt;p&gt;This gives me the flexibility to look up information on the fly and not break my entire workflow. If you’ve also found this to be an issue for you too, then I would suggest giving Dash a try.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
