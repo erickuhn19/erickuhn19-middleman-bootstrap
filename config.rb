@@ -35,10 +35,10 @@ page "/feed.xml", layout: false
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.branch = 'master'
   deploy.build_before = true
 end
 set :url_root, 'erickuhn19.git.io'
+page "CNAME", layout: false
 
 ###
 # Compass
