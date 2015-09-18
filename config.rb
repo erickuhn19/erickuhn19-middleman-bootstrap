@@ -41,6 +41,9 @@ end
 set :url_root, 'erickuhn19.git.io'
 page "CNAME", layout: false
 
+page "/about/*", :layout => "layout"
+page "/contact/*", :layout => "layout"
+
 ###
 # Compass
 ###
