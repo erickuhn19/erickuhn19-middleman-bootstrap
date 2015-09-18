@@ -5,10 +5,36 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-08-01T20:00:00-04:00</updated>
+  <updated>2015-09-17T20:00:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Going Mobile</title>
+    <link rel="alternate" href="http://blog.url.com/going-mobile/"/>
+    <id>http://blog.url.com/going-mobile/</id>
+    <published>2015-09-17T20:00:00-04:00</published>
+    <updated>2015-09-18T16:12:03-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;I started my programming journey almost a year ago and I’ve recently had a change in philosophy. I’ve decided to exclusively develop iOS apps using the new Swift language Apple debuted last year. This decision did not come lightly. Many conversations, read blog posts and internal pondering if this would be the right move took place before I came to the decision to invest my limited time in learning iOS development.&lt;/p&gt;
+
+&lt;p&gt;After extensive thought on this subject, I’ve dove in head first to learn as fast as I possibly can. My knowledge of web apps and understanding of Object Oriented Programming Languages such as Ruby have been extremely useful in learning Swift concepts. Xcode and the entire development process of iOS is so different, but the more I learn the more my own personal experiences with apps is helping me further my understanding. This is truly an exciting time.&lt;/p&gt;
+
+&lt;p&gt;So, why did I come to this conclusion? My wife originally planted the idea in my head when I first started to learn to code. It was a profound yet simple argument. The vast majority of the time she is on her phone, and the majority of that time is spent in apps, so why don’t you learn how to build these? I’m paraphrasing but when I think about it, it’s also the case for my own behavior. I spend the majority of my time in apps and I’m generally most excited about the possibility of what native apps have the capability of doing.&lt;/p&gt;
+
+&lt;p&gt;At the time I shrugged this off because I was in the infancy of my coding journey and the majority of the resources I found were for the web and Ruby on Rails. Just to be clear, I 100% don’t regret starting with the web. It was essential to understand the fundamental layers of how web frameworks work and this has and will continue to be profound in my iOS development. However, the argument she made began to creep into my mind which became inescapable to my thoughts.&lt;/p&gt;
+
+&lt;p&gt;Now, I could get all &lt;a href="www.ben-evans.com/"&gt;Benedict Evan’s&lt;/a&gt; and quote statistical data on why mobile is taking over the world or as he explains it “The smartphone is the new sun,” but seriously if you haven’t read his work, you should. I’ll leave him to make the technical arguments to why mobile is the most important piece of hardware in the world and to the future.&lt;/p&gt;
+
+&lt;p&gt;The decision became clear. To build solutions that solved my own problems I needed to develop software on the platform I spend the most time.&lt;/p&gt;
+
+&lt;p&gt;As I was writing about my Ruby on Rails coding journey, I will begin to do that for Swift and iOS development. Writing technical blog posts is to help me better understand the concepts I’m learning and has been enormously helpful. It was the sole reason for taking the part-time work at Codecademy as an Advisor. The experience of helping people to fix a bug or point them on the right path is a blog post in itself and I’ve loved the experience so far. I’ll get to that another time. For now, expect to see this blog full of Swift and iOS development post.&lt;/p&gt;
+
+&lt;p&gt;Happy Coding&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Website Redesign in Middleman</title>
     <link rel="alternate" href="http://blog.url.com/Website-Redesign-in-Middleman/"/>
@@ -309,43 +335,6 @@ puts “My name is #{name} and I have #{bitcoin * 2} bitcoins.”
 &lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Another quick tip if you are writing this code out in your Sublime Text editor (on a Mac) and you want to see if the code will run, just hit command + B. This will run the code right in the text editor without jumping to the command line. You can also test this out in IRB as well. To get to IRB, just hit IRB in the command line and typing out (exit) will get you out.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>My First Open Source Project rails blogger engine</title>
-    <link rel="alternate" href="http://blog.url.com/my-first-open-source-project-rails-blogger-engine/"/>
-    <id>http://blog.url.com/my-first-open-source-project-rails-blogger-engine/</id>
-    <published>2015-04-03T20:00:00-04:00</published>
-    <updated>2015-07-26T17:44:06-04:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;In the final weeks of Codecademy Labs we had to break off into teams, and choose a final project that will be presented on the last day. My mind instantly raced about what project I would choose. We only had two weeks to complete the project and this is a part time course. Did I want to build one of my pet projects I’ve been planning? Not really, I didn't want to rush one of those. Maybe I could just think of some small idea and hack it together with a team in two weeks, only to never use it again. That didn't sound like a good idea either. Then I thought it would be really cool to start some open source project and then be able to continue working on it after the class ended. Create something that not only would be an interesting final project but something real people could use. And maybe other people in the class would eventually contribute to it.&lt;/p&gt;
-
-&lt;p&gt;So me and my teammate, &lt;a href="https://github.com/meghart"&gt;Meg&lt;/a&gt;, started working on the idea. At first, we wanted to build a super simple authentication gem that could be used instead of Devise for personal blogs created in Rails (like this site). We started going through the tedious trial and error process to build a gem. Can I be honest here? I think gem building is probably the weakest area of documentation. OK, I just had to say it. Anyway, so there is multiple ways to build a gem. You can use bundler, you can create a plugin or you can make a mountable engine.&lt;/p&gt;
-
-&lt;p&gt;After we had a good sense on how the different types of gems were made, we began asking ourselves what we were trying to accomplish? A simple authentication gem for a rails blog! Does that mean the only thing the rails app has is a blog or is this just a piece of a bigger rails app? We wanted this gem to have a future and a future where I would want to use this in future applications. We needed to think bigger.&lt;/p&gt;
-
-&lt;p&gt;We ultimately decided to build a blogging gem for Rails that encompasses all of the pieces needed to just bolt on a blog to your rails app. Its called &lt;a href="https://rubygems.org/gems/rails_blogger_engine/"&gt;Rails_Blogger_Engine&lt;/a&gt;. That eventually includes our original idea of simple authentication. We didn't get there in the gem’s 1.0 release for the project, but its definitely included in the projects roadmap.&lt;/p&gt;
-
-&lt;p&gt;If you’re reading this and want to contribute to an open source project. Check out the features we think would be cool to add to this project. If you have your own ideas then just &lt;a href="https://github.com/erickuhn19/rails_blogger_engine"&gt;submit a pull request&lt;/a&gt; and we’ll see if it works.&lt;/p&gt;
-
-&lt;h3 id="feature-list"&gt;Feature List&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Initializers to push views &amp;amp; controllers to app&lt;/li&gt;
-  &lt;li&gt;Bootstrap template&lt;/li&gt;
-  &lt;li&gt;Markdown with syntax highlighting&lt;/li&gt;
-  &lt;li&gt;Simple authentication (Create admins on the rails console, no views for creating users)&lt;/li&gt;
-  &lt;li&gt;Google ReCaptcha for comment spam&lt;/li&gt;
-  &lt;li&gt;Comment form by clicking button through jQuery&lt;/li&gt;
-  &lt;li&gt;URL’s created through title of post&lt;/li&gt;
-  &lt;li&gt;SEO&lt;/li&gt;
-  &lt;li&gt;Pagination&lt;/li&gt;
-  &lt;li&gt;Tests!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anything else that you can think of!&lt;/p&gt;
 </content>
   </entry>
 </feed>
