@@ -5,10 +5,37 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-09-17T20:00:00-04:00</updated>
+  <updated>2016-01-01T19:00:00-05:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>The not so obvious problem for iOS developers</title>
+    <link rel="alternate" href="http://blog.url.com/The-not-so-obvious-problem-for-iOS-developers/"/>
+    <id>http://blog.url.com/The-not-so-obvious-problem-for-iOS-developers/</id>
+    <published>2016-01-01T19:00:00-05:00</published>
+    <updated>2016-01-02T12:07:38-05:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Recently my new company provided me with an 16GB iPhone 6S. I did everything in my power to circumvent this model, as I was using a iPhone 6 with 64GB at a 70% capacity. Switching to the 16GB seemed unfathomable. Since two iPhones in my pocket was not going to be an option, I told myself I would make this work. First, I needed to make some ground rules or this was going to be a disaster.&lt;/p&gt;
+
+&lt;p&gt;I started with creating a new phone and not installing my iCloud back up. I had 244 non-Apple apps on my phone and knew I needed to narrow this down. Only my most used apps were going to make the cut. This was a herculean challenge but a good exercise to think about what I was receiving the most value from. As of this writing I only downloaded 40 but I feel like I cut too many corners. One thing I had going for me is I don’t use any music on my phone since I use Spotify.&lt;/p&gt;
+
+&lt;p&gt;The most glaring problem I have with this new set up is my new trepidation to try out new apps. Is this a problem other people think about? In the past I would try out apps on a whim and keep them around even if it’s a one time use case. Now my new world view is drastically different because of the limited space. This makes me uncomfortable since I ‘m a Product Manager in the mobile space. Testing a large number of apps is part of the job description.&lt;/p&gt;
+
+&lt;p&gt;Now that I’ve given my personal account how this phone affects me. Let’s think about it in a broader context and what are the ripple effects for the ecosystem.&lt;/p&gt;
+
+&lt;p&gt;So I’ve read all the reports about the amount of apps the average person uses per day &lt;a href="http://techcrunch.com/2015/06/22/consumers-spend-85-of-time-on-smartphones-in-apps-but-only-5-apps-see-heavy-use/#.vyo3cp:5bJy"&gt;(5)&lt;/a&gt; and how many she will keep on her phone &lt;a href="http://mashable.com/2013/09/05/most-apps-download-countries/"&gt;(25)&lt;/a&gt;, but that is just data. The important question is why are people limiting their app consumption. Is it a personal preference or a choice they’re forced to make? This distinction is important as the app ecosystem’s vibrancy of new apps depends on it.&lt;/p&gt;
+
+&lt;p&gt;Let’s run with the idea that the vast majority of people own a 16GB iPhone. This is a safe assumption thanks to some data from the UK that says &lt;a href="http://www.businessinsider.com/iphone-storage-data-market-share-2014-12?r=UK&amp;amp;IR=T"&gt;91% of Telefonica users have the 16GB model.&lt;/a&gt;
+Let’s make another assumption and say the majority of those people run into a shortage of space on a frequent basis. If this is the case, then the obvious statement is Apple is not giving the user the best experience. The less obvious statement. App developers are experiencing a constraint in growth outside of their control.&lt;/p&gt;
+
+&lt;p&gt;Yes, Apple launched app thinning and reduced the size of OS updates. But that won’t solve the problem overnight. A simple thought experiment. If someone needed to choose between photos of their loved ones and the newest app. Which would they choose? The problem for app developers is, why do they have to?&lt;/p&gt;
+
+&lt;p&gt;This is an important observation as we increasingly rely on software to make improvements in our lives. As a Product Manager, it is more important than ever to bring real value to your users. Your not only competing for the user’s time and attention. You are competing for space on their phone.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Going Mobile</title>
     <link rel="alternate" href="http://blog.url.com/going-mobile/"/>
@@ -290,51 +317,6 @@ self.class
 &lt;p&gt;You get Object. We found out object! Makes sense now?&lt;/p&gt;
 
 &lt;p&gt;Wrap up: “puts” is a method, its called on a object and is stored in self. All methods are called on objects even if you don't see it.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Ruby Basics Double Quoted Strings</title>
-    <link rel="alternate" href="http://blog.url.com/ruby-basics-double-quoted-strings/"/>
-    <id>http://blog.url.com/ruby-basics-double-quoted-strings/</id>
-    <published>2015-04-08T20:00:00-04:00</published>
-    <updated>2015-07-26T17:45:48-04:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;For all intensive purposes I only use double quoted strings. I highly recommend taking a look at &lt;a href="https://github.com/thoughtbot/guides/tree/master/style/ruby"&gt;ThoughtBot’s Ruby Style Guide&lt;/a&gt; which I am echoing here, but lets take a quick at look why we should use double quoted strings.&lt;/p&gt;
-
-&lt;p&gt;Lets say I have two variables:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-name = “Eric”
-bitcoin = 100
-&lt;/code&gt;
-If I have single quoted strings and I want to use both variables I have to use concatenation. Which means using the “+” symbol to add two strings together. Well I can quickly run into errors if I’m not careful.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-puts ‘My name is ‘ + name + ‘and I have ‘ + bitcoin ‘bitcoins.’
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We will get an error message if we run this code. Specifically a TypeError of 'no implicit conversion of Fixnum into String'. The reason we get this error is the variable, bitcoin = 100, is a fixnum, which is just an integer, and this can't be called without using the string version. So lets see how this is done correctly.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-puts ‘My name is ‘ + name + ‘and I have ‘ + bitcoin.to_s ‘bitcoins.’
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Not a huge difference but something you have to remember and its more typing. Now lets see this refactored using double quotes. What does refactoring mean? Its the process of altering existing code internally to make it better without altering what that code does external. We will change the code but it will still have the same result.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-puts “My name is #{name} and I have #{bitcoin} bitcoins.”
-&lt;/code&gt;
-Using the double quoted strings and using a technique called interpolation, it automatically converts the variable into a string so we can run it without errors. Interpolation just allows Ruby code to appear evaluated within the string.&lt;/p&gt;
-
-&lt;p&gt;If we wanted to say I had double the bitcoins then the hardcoded variable, we could just do:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-puts “My name is #{name} and I have #{bitcoin * 2} bitcoins.”
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Another quick tip if you are writing this code out in your Sublime Text editor (on a Mac) and you want to see if the code will run, just hit command + B. This will run the code right in the text editor without jumping to the command line. You can also test this out in IRB as well. To get to IRB, just hit IRB in the command line and typing out (exit) will get you out.&lt;/p&gt;
 </content>
   </entry>
 </feed>
