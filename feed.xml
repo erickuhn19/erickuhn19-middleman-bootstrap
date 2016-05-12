@@ -5,10 +5,40 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2016-01-01T19:00:00-05:00</updated>
+  <updated>2016-05-12T11:54:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Gboard</title>
+    <link rel="alternate" href="http://blog.url.com/Gboard/"/>
+    <id>http://blog.url.com/Gboard/</id>
+    <published>2016-05-12T11:54:00-04:00</published>
+    <updated>2016-05-12T12:08:18-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Google has announced today it's launching a keyboard for iOS called &lt;a href="https://googleblog.blogspot.com/2016/05/gboard-search-gifs-emojis-keyboard.html"&gt;Gboard.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="GBoard" src="https://2.bp.blogspot.com/-ALxOB9Ab_9A/VzQuQB1vl5I/AAAAAAAASRo/0gE-Dij5TIEvUIY3zDcvQtivBEQ23VkuwCLcB/s1600/gboard_gif_regularSearch.gif" /&gt;&lt;/p&gt;
+
+&lt;p&gt;From &lt;a href="http://techcrunch.com/2016/05/12/google-launches-gboard-an-ios-keyboard-that-lets-you-search-without-a-browser/"&gt;TechCrunch:&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Of course, the most interesting feature of this keyboard is its direct integration with Google’s services.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;By tapping the included “G” icon, you’re able to immediately search Google without exiting your keyboard and launching a browser or the Google app.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This allows you to easily search for things like flight times, news articles, restaurant and business listings, weather and more right from your keyboard, then just tap to paste that information into your chat. (You’ll need to give the app access to your location the first time you launch this feature.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I'm surprised this move did not come sooner, as Microsoft has already realized the power of integrating itself into the keyboard. The SwiftKey aquisition was a telling sign that this space is going to start to heat up.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>The not so obvious problem for iOS developers</title>
     <link rel="alternate" href="http://blog.url.com/The-not-so-obvious-problem-for-iOS-developers/"/>
@@ -280,43 +310,6 @@ puts Dexter
 &lt;p&gt;So using that one line of code I created a class object of Dexter who has two instance variables of @name and @health. When I call “puts Dexter”, the output will be “My dogs name is Dexter and he has 110% energy! This dog loves to play!”&lt;/p&gt;
 
 &lt;p&gt;Take this example and try it for yourself in your text editor! &lt;strong&gt;Or go play with a dog that has lots of energy!&lt;/strong&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Ruby Basics puts yo self</title>
-    <link rel="alternate" href="http://blog.url.com/ruby-basics-puts-yo-self/"/>
-    <id>http://blog.url.com/ruby-basics-puts-yo-self/</id>
-    <published>2015-04-08T20:00:00-04:00</published>
-    <updated>2015-07-26T17:47:14-04:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;As soon as you start to learn the Ruby programming language you hear about this “puts” thing. Puts right away is used and is pretty cool. When you want to “put” something to the screen, you runs puts.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-puts “Eric knows Ruby!”
-puts “Hello World”
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Well “puts” is a method if you were wondering. Now that might not make a whole lot of sense since you probably learned that all methods are called on objects. Something like:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-name = “eric”
-name.upcase
-&lt;/code&gt;
-My method upcase was called on the object of name. So puts is a method but where is its object?&lt;/p&gt;
-
-&lt;p&gt;Intro to self.&lt;/p&gt;
-
-&lt;p&gt;Anytime there isn't an object referenced on the left hand side, Ruby references a variable called self. Self will always reference the current object. Self is a global object and its value is main. If you run:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-self.class
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;You get Object. We found out object! Makes sense now?&lt;/p&gt;
-
-&lt;p&gt;Wrap up: “puts” is a method, its called on a object and is stored in self. All methods are called on objects even if you don't see it.&lt;/p&gt;
 </content>
   </entry>
 </feed>
