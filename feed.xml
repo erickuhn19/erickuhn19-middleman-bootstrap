@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Blog Name</title>
-  <subtitle>Blog subtitle</subtitle>
-  <id>http://blog.url.com/</id>
-  <link href="http://blog.url.com/"/>
-  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <title>erickuhn19.com</title>
+  <subtitle>Blog</subtitle>
+  <id>http://erickuhn19.com</id>
+  <link href="http://erickuhn19.com"/>
+  <link href="http://erickuhn19.com/feed.xml" rel="self"/>
   <updated>2016-05-12T11:54:00-04:00</updated>
   <author>
-    <name>Blog Author</name>
+    <name>Eric Kuhn</name>
   </author>
   <entry>
     <title>Gboard</title>
-    <link rel="alternate" href="http://blog.url.com/Gboard/"/>
-    <id>http://blog.url.com/Gboard/</id>
+    <link rel="alternate" href="http://erickuhn19.com/Gboard/"/>
+    <id>http://erickuhn19.com/Gboard/</id>
     <published>2016-05-12T11:54:00-04:00</published>
     <updated>2016-05-12T12:08:18-04:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Eric Kuhn</name>
     </author>
     <content type="html">&lt;p&gt;Google has announced today it's launching a keyboard for iOS called &lt;a href="https://googleblog.blogspot.com/2016/05/gboard-search-gifs-emojis-keyboard.html"&gt;Gboard.&lt;/a&gt;&lt;/p&gt;
 
@@ -41,12 +41,12 @@
   </entry>
   <entry>
     <title>The not so obvious problem for iOS developers</title>
-    <link rel="alternate" href="http://blog.url.com/The-not-so-obvious-problem-for-iOS-developers/"/>
-    <id>http://blog.url.com/The-not-so-obvious-problem-for-iOS-developers/</id>
+    <link rel="alternate" href="http://erickuhn19.com/The-not-so-obvious-problem-for-iOS-developers/"/>
+    <id>http://erickuhn19.com/The-not-so-obvious-problem-for-iOS-developers/</id>
     <published>2016-01-01T19:00:00-05:00</published>
     <updated>2016-01-02T12:07:38-05:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Eric Kuhn</name>
     </author>
     <content type="html">&lt;p&gt;Recently my new company provided me with an 16GB iPhone 6S. I did everything in my power to circumvent this model, as I was using a iPhone 6 with 64GB at a 70% capacity. Switching to the 16GB seemed unfathomable. Since two iPhones in my pocket was not going to be an option, I told myself I would make this work. First, I needed to make some ground rules or this was going to be a disaster.&lt;/p&gt;
 
@@ -68,12 +68,12 @@ Let’s make another assumption and say the majority of those people run into a 
   </entry>
   <entry>
     <title>Going Mobile</title>
-    <link rel="alternate" href="http://blog.url.com/going-mobile/"/>
-    <id>http://blog.url.com/going-mobile/</id>
+    <link rel="alternate" href="http://erickuhn19.com/going-mobile/"/>
+    <id>http://erickuhn19.com/going-mobile/</id>
     <published>2015-09-17T20:00:00-04:00</published>
     <updated>2015-09-18T16:12:03-04:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Eric Kuhn</name>
     </author>
     <content type="html">&lt;p&gt;I started my programming journey almost a year ago and I’ve recently had a change in philosophy. I’ve decided to exclusively develop iOS apps using the new Swift language Apple debuted last year. This decision did not come lightly. Many conversations, read blog posts and internal pondering if this would be the right move took place before I came to the decision to invest my limited time in learning iOS development.&lt;/p&gt;
 
@@ -94,12 +94,12 @@ Let’s make another assumption and say the majority of those people run into a 
   </entry>
   <entry>
     <title>Website Redesign in Middleman</title>
-    <link rel="alternate" href="http://blog.url.com/Website-Redesign-in-Middleman/"/>
-    <id>http://blog.url.com/Website-Redesign-in-Middleman/</id>
+    <link rel="alternate" href="http://erickuhn19.com/Website-Redesign-in-Middleman/"/>
+    <id>http://erickuhn19.com/Website-Redesign-in-Middleman/</id>
     <published>2015-08-01T20:00:00-04:00</published>
     <updated>2015-08-02T14:36:39-04:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Eric Kuhn</name>
     </author>
     <content type="html">&lt;p&gt;If you haven’t noticed but I’ve done an overhaul of my website and blog. I’m not done with making tweaks, honestly I still have a lot to do but I wanted to just ship it and make the changes as I go.&lt;/p&gt;
 
@@ -118,12 +118,12 @@ Let’s make another assumption and say the majority of those people run into a 
   </entry>
   <entry>
     <title>Ruby Basics Intro to RSpec</title>
-    <link rel="alternate" href="http://blog.url.com/ruby-basics-intro-to-rspec/"/>
-    <id>http://blog.url.com/ruby-basics-intro-to-rspec/</id>
+    <link rel="alternate" href="http://erickuhn19.com/ruby-basics-intro-to-rspec/"/>
+    <id>http://erickuhn19.com/ruby-basics-intro-to-rspec/</id>
     <published>2015-04-12T20:00:00-04:00</published>
     <updated>2015-07-26T17:51:23-04:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Eric Kuhn</name>
     </author>
     <content type="html">&lt;p&gt;The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its &lt;a href="http://rspec.info"&gt;website&lt;/a&gt; as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code.&lt;/p&gt;
 
@@ -246,12 +246,12 @@ rspec dog_spec.rb —color —format doc
   </entry>
   <entry>
     <title>Ruby Basics Classes, Instance Variables and Initialize</title>
-    <link rel="alternate" href="http://blog.url.com/ruby-basics-classes-instance-variables-and-initialize/"/>
-    <id>http://blog.url.com/ruby-basics-classes-instance-variables-and-initialize/</id>
+    <link rel="alternate" href="http://erickuhn19.com/ruby-basics-classes-instance-variables-and-initialize/"/>
+    <id>http://erickuhn19.com/ruby-basics-classes-instance-variables-and-initialize/</id>
     <published>2015-04-10T20:00:00-04:00</published>
     <updated>2015-07-26T17:49:33-04:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Eric Kuhn</name>
     </author>
     <content type="html">&lt;p&gt;I want to quickly touch on 3 concepts that are super important to the Ruby language. Having an understanding how Classes, Instance Variables and the Initialize method work together will be beneficial in mastering the Ruby programming language.&lt;/p&gt;
 
