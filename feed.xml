@@ -5,10 +5,22 @@
   <id>http://erickuhn19.com</id>
   <link href="http://erickuhn19.com"/>
   <link href="http://erickuhn19.com/feed.xml" rel="self"/>
-  <updated>2016-05-14T13:01:00-04:00</updated>
+  <updated>2016-05-17T21:28:00-04:00</updated>
   <author>
     <name>Eric Kuhn</name>
   </author>
+  <entry>
+    <title>TITLE</title>
+    <link rel="alternate" href="http://erickuhn19.com/solving-customer-problems-in-payments/"/>
+    <id>http://erickuhn19.com/solving-customer-problems-in-payments/</id>
+    <published>2016-05-17T21:28:00-04:00</published>
+    <updated>2016-05-17T21:28:27-04:00</updated>
+    <author>
+      <name>Eric Kuhn</name>
+    </author>
+    <content type="html">
+</content>
+  </entry>
   <entry>
     <title>Apple shortens app review times</title>
     <link rel="alternate" href="http://erickuhn19.com/apple-shortens-app-review-times/"/>
@@ -136,134 +148,6 @@ Let’s make another assumption and say the majority of those people run into a 
 &lt;p&gt;Anyway, I’m not going to get into the finer details of Middleman in this post. For now I’ll say that I’m very happy I’ve made the switch and will certainly be using it for my future projects, plus I probably need to redesign the original work project as it's continuing to grow in scope and needs a nice framework to develop it efficently.&lt;/p&gt;
 
 &lt;p&gt;My hiatus from writing regularly is officially over.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Ruby Basics Intro to RSpec</title>
-    <link rel="alternate" href="http://erickuhn19.com/ruby-basics-intro-to-rspec/"/>
-    <id>http://erickuhn19.com/ruby-basics-intro-to-rspec/</id>
-    <published>2015-04-12T20:00:00-04:00</published>
-    <updated>2015-07-26T17:51:23-04:00</updated>
-    <author>
-      <name>Eric Kuhn</name>
-    </author>
-    <content type="html">&lt;p&gt;The last post I touched on classes and in this tutorial we are going to test that class using RSpec. RSpec is described on its &lt;a href="http://rspec.info"&gt;website&lt;/a&gt; as a behavior driven development for ruby. I think thats a pretty accurate description but to break it down even further, RSpec is a framework to test your code. It was built as a domain specific language, which means it’s built in Ruby with its own syntax but its still just Ruby code.&lt;/p&gt;
-
-&lt;p&gt;Now the more you learn about Ruby and the Rails framework, you will see the debate in the community about which testing framework is better, RSpec or MiniTest. The best advice I’ve heard on this issue is as long as your testing, then your going in the right direction. I’ve chosen RSpec, but that doesn't mean you have to.&lt;/p&gt;
-
-&lt;p&gt;Ok, so I’ve expanded the the class of Dog a bit by adding a few methods for playing and resting. To test out my code and practice on your own, create a new file called dog.rb. Tip, you can create a file in your command line like this.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-touch dog.rb
-sublime dog.rb
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If your using Sublime thats a shortcut you can set up to have the file automatically open up. Going through the Finder directory is no fun. I used this &lt;a href="http://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/"&gt;walk through&lt;/a&gt; to set it up.&lt;/p&gt;
-
-&lt;p&gt;Write out this code into your dog.rb file. You can copy and paste it but writing out each line is recommended to understand whats going on.&lt;/p&gt;
-
-&lt;p&gt;```ruby
-class Dog
-  attr_reader :energy, :name
-  def initialize(name, energy=100)
-    @name = name.capitalize
-    @energy = energy
-  end&lt;/p&gt;
-
-&lt;p&gt;def to_s
-    "My dogs name is #{@name} and he has #{@energy} % energy! This dog loves to play!"
-  end&lt;/p&gt;
-
-&lt;p&gt;def play
-    @energy -= 20
-    puts "#{@name} just ran around the yard! That dog is so fast!"
-  end&lt;/p&gt;
-
-&lt;p&gt;def rest
-    @energy += 25
-    puts "#{@name} just took a nap. Dogs love to sleep."
-  end 
-end&lt;/p&gt;
-
-&lt;p&gt;if &lt;strong&gt;FILE&lt;/strong&gt; == $0
-  dog = Dog.new("Dexter", 110)
-  puts dog
-  puts dog.energy
-  puts dog.play
-  puts dog.rest
-end
-```&lt;/p&gt;
-
-&lt;p&gt;Now we want to test this class using RSpec. As of this writing RSpec version is at 3.2. Start in your command line and run:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-gem install rspec
-&lt;/code&gt;
-To use RSpec create a new file named dog_spec.rb in the same folder you created dog.rb. The spec portion of the name is what RSpec looks for to run your tests. If you’ve forgotten how to create a file from the command line:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-touch dog_spec.rb
-sublime dog_spec.rb
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we have our class created and we have a blank file to put our tests in, lets get to it. I’m going to give all the code at once, but its extremely helpful to go line by line adding the code into the file so you know what it does.&lt;/p&gt;
-
-&lt;p&gt;```ruby
-require_relative 'dog'&lt;/p&gt;
-
-&lt;p&gt;describe Dog do
-  before do
-    @initial_energy = 100
-    @dog = Dog.new("dexter", @initial_energy)
-  end&lt;/p&gt;
-
-&lt;p&gt;it "has a capitalized name" do
-    expect(@dog.name).to eq("Dexter")
-  end&lt;/p&gt;
-
-&lt;p&gt;it "has an initial energy set" do
-    expect(@dog.energy).to eq(100)
-  end&lt;/p&gt;
-
-&lt;p&gt;it "has a string returned for the object" do
-    expect(@dog.to_s).to eq("My dogs name is Dexter and he has 100 % energy! This dog loves to play!")
-  end&lt;/p&gt;
-
-&lt;p&gt;it "reduces energy by 20 when a dog plays" do
-    @dog.play
-    expect(@dog.energy).to eq(@initial_energy - 20)
-  end&lt;/p&gt;
-
-&lt;p&gt;it "increases energy by 25 when a dog rests" do
-    @dog.rest
-    expect(@dog.energy).to eq(@initial_energy +25)
-  end&lt;/p&gt;
-
-&lt;p&gt;context "create a dog with default energy" do
-    before do
-      @dog = Dog.new("dexter")
-    end&lt;/p&gt;
-
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;it "has a default energy of 100" do
-  expect(@dog.energy).to eq(100)
-end   end end ```
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The first thing this RSpec file needs to do is require the file we are testing, the dog.rb file. Then on line 3 we start using the basic structure of the testing framework which is supposed to express concepts like a conversation. I translate this first line into “Please describe the Class of Dog doing these things”.&lt;/p&gt;
-
-&lt;p&gt;The block of code that starts on line 4 runs before each testing scenario that starts with “it”. This “before do” basically creates the environment for us to test a specific use case. Instead of typing out this each time we run a scenario it can automatically run for each test case. This conforms to the DRY principle in programming, or Don’t Repeat Yourself.&lt;/p&gt;
-
-&lt;p&gt;Ok, so test scenario 1 is saying a statement of “it has a capitalized name”. One thing I need to say here, please don't ever call a dog an “it”, that would not be cool! It is referring to the object we are testing and this is the only time where this would be ok. Anyway, keeping the literal translation going I would translate the next line to say “it (the dog) has a capitalized name, do this test, we expect when you call the dog’s name, it will show up as ‘Dexter’ ”. Thats a pretty simple formula to follow, right? The line for “it” states the statement we are trying to test, “expect” is giving the exact parameter we want to see, “.to” wants to see a true value and “eq” is saying the output should equal “Dexter”.&lt;/p&gt;
-
-&lt;p&gt;To actually see this test file run, go back to your command line and you can run any one of the following three commands. Try each one out to see which format you like the best.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-rspec dog_spec.rb
-rspec dog_spec.rb —color
-rspec dog_spec.rb —color —format doc
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Thanks for following along to my simple introduction to RSpec!&lt;/p&gt;
 </content>
   </entry>
 </feed>
