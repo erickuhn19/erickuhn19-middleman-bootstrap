@@ -5,10 +5,36 @@
   <id>http://erickuhn19.com</id>
   <link href="http://erickuhn19.com"/>
   <link href="http://erickuhn19.com/feed.xml" rel="self"/>
-  <updated>2016-05-17T21:28:00-04:00</updated>
+  <updated>2016-05-22T22:03:00-04:00</updated>
   <author>
     <name>Eric Kuhn</name>
   </author>
+  <entry>
+    <title>Google I/O 2016 thoughts</title>
+    <link rel="alternate" href="http://erickuhn19.com/google-io-2016-thoughts/"/>
+    <id>http://erickuhn19.com/google-io-2016-thoughts/</id>
+    <published>2016-05-22T22:03:00-04:00</published>
+    <updated>2016-05-22T22:04:46-04:00</updated>
+    <author>
+      <name>Eric Kuhn</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Google IO 2016" src="/images/googleio2016.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This isn’t going to be a full write up of Google I/O 2016. There are many that do a great job of that, you can read &lt;a href="http://techcrunch.com/gallery/everything-you-need-to-know-from-the-2016-google-io-keynote/"&gt;TechCrunch’s here&lt;/a&gt;, &lt;a href="http://www.theverge.com/2016/5/18/11701030/google-io-2016-keynote-highlights-announcements-recap"&gt;The Verge here&lt;/a&gt;, and &lt;a href="http://thenextweb.com/google/2016/05/20/google-io-2016-recap-everything-need-know/#gref"&gt;The Next Web here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m going to touch on the two things that I am really excited about. The first is Google Home. I’ve been excited about Amazon’s Echo but haven’t jumped in yet. I’ve read and seen examples where the Echo can be a really cool utility because of it’s always listening functionality. I air on the side of Siracusa here &lt;a href="http://atp.fm/episodes/170"&gt;(listen to the ATP 170 to hear his thoughts)&lt;/a&gt; and think that the the full stack integrations with merchants isn’t there yet, so it won’t be able to do the things I really would like it to do. However, if I trust any company to do this really well, it’s Google. Google’s core competency is in big data processing and machine learning which is exactly what this product is meant for. I will 100% be a buyer of this product.&lt;/p&gt;
+
+&lt;p&gt;If only my new Apple TV had the always listening functionality with enhanced microphones. Apple could have already had a horse in this race. Siri on iPhone and Apple Watch isn’t sufficient because the ‘hey siri’ is way too hit or miss.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://marco.org/2016/05/21/avoiding-blackberrys-fate"&gt;Marco Arment writes up a great piece&lt;/a&gt; on his fear that Apple is not focusing enough on the machine learning/AI strategy, where its competitors already have an advantage. Let’s see if Apple opens up a Siri API at WWDC next month.&lt;/p&gt;
+
+&lt;p&gt;The other Google IO announcement that is really exciting and I plan on diving in much deeper with, is &lt;a href="https://firebase.google.com/"&gt;Firebase.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Firebase" src="/images/firebase.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Firebase was purchased around 18 months ago and this is the &lt;a href="http://www.theverge.com/2016/5/18/11704050/google-firebase-baas-facebook-parse-google-io-2016"&gt;first major addition to the platform.&lt;/a&gt; With &lt;a href="http://blog.parse.com/announcements/moving-on/"&gt;Parse shutting down&lt;/a&gt; this is a welcome to the developer community that want to rely on back end as a service (BaaS) platforms. I am personally excited and already diving into the documentation to see how I could utilize this service in my next side project. The reason why it’s so intriguing? Google is building this platform to be multi channel: iOS, Android and Web. Back end services are one of those things Google does well and this update to Firebase is going to help fill the void where Parse left off.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Solving customer problems in payments</title>
     <link rel="alternate" href="http://erickuhn19.com/solving-customer-problems-in-payments/"/>
@@ -142,30 +168,6 @@ Let’s make another assumption and say the majority of those people run into a 
 &lt;p&gt;As I was writing about my Ruby on Rails coding journey, I will begin to do that for Swift and iOS development. Writing technical blog posts is to help me better understand the concepts I’m learning and has been enormously helpful. It was the sole reason for taking the part-time work at Codecademy as an Advisor. The experience of helping people to fix a bug or point them on the right path is a blog post in itself and I’ve loved the experience so far. I’ll get to that another time. For now, expect to see this blog full of Swift and iOS development post.&lt;/p&gt;
 
 &lt;p&gt;Happy Coding&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Website Redesign in Middleman</title>
-    <link rel="alternate" href="http://erickuhn19.com/Website-Redesign-in-Middleman/"/>
-    <id>http://erickuhn19.com/Website-Redesign-in-Middleman/</id>
-    <published>2015-08-01T20:00:00-04:00</published>
-    <updated>2015-08-02T14:36:39-04:00</updated>
-    <author>
-      <name>Eric Kuhn</name>
-    </author>
-    <content type="html">&lt;p&gt;If you haven’t noticed but I’ve done an overhaul of my website and blog. I’m not done with making tweaks, honestly I still have a lot to do but I wanted to just ship it and make the changes as I go.&lt;/p&gt;
-
-&lt;p&gt;The site is built on a totally different framework than before. The last site was a blog built with Ruby on Rails. I used my personal blog to test my Rails development skills and it served a useful purpose. It was a simple app that I could maintain to just get into the Rails framework. However, its time has come.&lt;/p&gt;
-
-&lt;p&gt;For a project at work (I’ll get to my new job in a later post) I needed to build a new front end site for the project I’m working on. I’ve conceptually moved away from using Wordpress since I’ve taught myself to code using Ruby on Rails, HTML, CSS, jQuery and the Bootstrap framework. So building a Wordpress site with blog just wasn’t an option for me. I ended up just customizing a Bootstrap theme in pure HTML, CSS and jQuery out of necessity, but I knew this was not sustainable for a larger scale site.&lt;/p&gt;
-
-&lt;p&gt;I found myself coming across Static Site Generators such as Middleman and Jekyll and instantly fell in love with these frameworks. Ok, maybe not in love but I really liked the concept. I realized I didn’t need to build a Rails web app to serve a static site like a marketing site, but the features of Rails such as partials and gems were so appealing. After doing way more research than I would have liked I settled on Middleman, partially because of its connection to Thoughtbot (I’m a big fan).&lt;/p&gt;
-
-&lt;p&gt;I decided that it was time for a change to my personal site and was excited to test out the new framework. Also, I want to have a go-to front end static site generator framework that can serve up my marketing sites with blog for future projects. Did I mention I am serving this site on Github Pages for free? No longer do I need to pay some absurd monthly fee  for specialized managed Wordpress host.&lt;/p&gt;
-
-&lt;p&gt;Anyway, I’m not going to get into the finer details of Middleman in this post. For now I’ll say that I’m very happy I’ve made the switch and will certainly be using it for my future projects, plus I probably need to redesign the original work project as it's continuing to grow in scope and needs a nice framework to develop it efficently.&lt;/p&gt;
-
-&lt;p&gt;My hiatus from writing regularly is officially over.&lt;/p&gt;
 </content>
   </entry>
 </feed>
