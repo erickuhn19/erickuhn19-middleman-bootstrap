@@ -5,10 +5,59 @@
   <id>http://erickuhn19.com</id>
   <link href="http://erickuhn19.com"/>
   <link href="http://erickuhn19.com/feed.xml" rel="self"/>
-  <updated>2016-05-22T22:03:00-04:00</updated>
+  <updated>2016-05-30T22:54:00-04:00</updated>
   <author>
     <name>Eric Kuhn</name>
   </author>
+  <entry>
+    <title>Building a chat app with Firebase and Swift</title>
+    <link rel="alternate" href="http://erickuhn19.com/building-a-chat-app-with-firebase-and-swift/"/>
+    <id>http://erickuhn19.com/building-a-chat-app-with-firebase-and-swift/</id>
+    <published>2016-05-30T22:54:00-04:00</published>
+    <updated>2016-05-30T22:55:49-04:00</updated>
+    <author>
+      <name>Eric Kuhn</name>
+    </author>
+    <content type="html">&lt;p&gt;So in my &lt;a href="http://erickuhn19.com/google-io-2016-thoughts/"&gt;last post on Google I/O&lt;/a&gt; I mentioned I was going to explore Firebase and I’ve been doing just that. The Firebase team has great documentation on their site as well as some helpful tutorials. I completed the iOS building a messaging app with Swift. You can find the link &lt;a href="https://codelabs.developers.google.com/codelabs/firebase-ios-swift"&gt;here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It was very cool to see the power behind the SDK and how Firebase can augment so many backend things you would have to build into your API. I followed along but getting to understand all the functions is really where you can unlock Firebase’s true potential. I plan on doing this over the next few weeks.&lt;/p&gt;
+
+&lt;p&gt;In the tutorial you learn how to set up the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sync data using the Firebase Realtime Database.&lt;/li&gt;
+  &lt;li&gt;Manage Identity and Sign In with Firebase Authentication&lt;/li&gt;
+  &lt;li&gt;Store and access files using Firebase Storage.&lt;/li&gt;
+  &lt;li&gt;Configure an application with Firebase Remote Config.&lt;/li&gt;
+  &lt;li&gt;Track application usage flows with Firebase Analytics.&lt;/li&gt;
+  &lt;li&gt;Display ads with AdMob.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However, there were a few issues with the documentation. Nothing a little stackoverflow/github googling couldn’t fix. Here are the fixes:&lt;/p&gt;
+
+&lt;p&gt;Section 8: &lt;a href="http://stackoverflow.com/questions/37383187/error-in-firebase-ios-codelab-chat-app-tutorial"&gt;stackoverflow link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Need to add to the Constants.Swift file&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;swift
+static let imageUrl = "imageUrl"
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;All looked good after that and then I caught this error when I complied.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;FriendlyChatSwift[7097:353609] &lt;em&gt;** Assertion failure in -[UITableView _endCellAnimationsWithContext:], /BuildRoot/Library/Caches/com.apple.xbs/Sources/UIKit_Sim/UIKit-3512.60.7/UITableView.m:1716 2016-05-28 16:38:42.950 FriendlyChatSwift[7097:353609] **&lt;/em&gt; Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Invalid update: invalid number of rows in section 0.  The number of rows contained in an existing section after the update (1) must be equal to the number of rows contained in that section before the update (27), plus or minus the number of rows inserted or deleted from that section (1 inserted, 0 deleted) and plus or minus the number of rows moved into or out of that section (0 moved in, 0 moved out).'&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here is the discussion on the &lt;a href="https://github.com/firebase/friendlychat/issues/25"&gt;Firebase’s github page&lt;/a&gt; on the issue. The answer that ended up working for me came from this source on &lt;a href="http://stackoverflow.com/questions/37400316/image-upload-crash-in-firebase-codelabs-friendlychat-tutorial"&gt;stackoverflow.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I also found an error in step 10, use this in the viewDidLoad:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;swift
+self.remoteConfig = FIRRemoteConfig.remoteConfig()
+&lt;/code&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Google I/O 2016 thoughts</title>
     <link rel="alternate" href="http://erickuhn19.com/google-io-2016-thoughts/"/>
@@ -142,32 +191,6 @@ Let’s make another assumption and say the majority of those people run into a 
 &lt;p&gt;Yes, Apple launched app thinning and reduced the size of OS updates. But that won’t solve the problem overnight. A simple thought experiment. If someone needed to choose between photos of their loved ones and the newest app. Which would they choose? The problem for app developers is, why do they have to?&lt;/p&gt;
 
 &lt;p&gt;This is an important observation as we increasingly rely on software to make improvements in our lives. As a Product Manager, it is more important than ever to bring real value to your users. Your not only competing for the user’s time and attention. You are competing for space on their phone.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Going Mobile</title>
-    <link rel="alternate" href="http://erickuhn19.com/going-mobile/"/>
-    <id>http://erickuhn19.com/going-mobile/</id>
-    <published>2015-09-17T20:00:00-04:00</published>
-    <updated>2015-09-18T16:12:03-04:00</updated>
-    <author>
-      <name>Eric Kuhn</name>
-    </author>
-    <content type="html">&lt;p&gt;I started my programming journey almost a year ago and I’ve recently had a change in philosophy. I’ve decided to exclusively develop iOS apps using the new Swift language Apple debuted last year. This decision did not come lightly. Many conversations, read blog posts and internal pondering if this would be the right move took place before I came to the decision to invest my limited time in learning iOS development.&lt;/p&gt;
-
-&lt;p&gt;After extensive thought on this subject, I’ve dove in head first to learn as fast as I possibly can. My knowledge of web apps and understanding of Object Oriented Programming Languages such as Ruby have been extremely useful in learning Swift concepts. Xcode and the entire development process of iOS is so different, but the more I learn the more my own personal experiences with apps is helping me further my understanding. This is truly an exciting time.&lt;/p&gt;
-
-&lt;p&gt;So, why did I come to this conclusion? My wife originally planted the idea in my head when I first started to learn to code. It was a profound yet simple argument. The vast majority of the time she is on her phone, and the majority of that time is spent in apps, so why don’t you learn how to build these? I’m paraphrasing but when I think about it, it’s also the case for my own behavior. I spend the majority of my time in apps and I’m generally most excited about the possibility of what native apps have the capability of doing.&lt;/p&gt;
-
-&lt;p&gt;At the time I shrugged this off because I was in the infancy of my coding journey and the majority of the resources I found were for the web and Ruby on Rails. Just to be clear, I 100% don’t regret starting with the web. It was essential to understand the fundamental layers of how web frameworks work and this has and will continue to be profound in my iOS development. However, the argument she made began to creep into my mind which became inescapable to my thoughts.&lt;/p&gt;
-
-&lt;p&gt;Now, I could get all &lt;a href="www.ben-evans.com/"&gt;Benedict Evan’s&lt;/a&gt; and quote statistical data on why mobile is taking over the world or as he explains it “The smartphone is the new sun,” but seriously if you haven’t read his work, you should. I’ll leave him to make the technical arguments to why mobile is the most important piece of hardware in the world and to the future.&lt;/p&gt;
-
-&lt;p&gt;The decision became clear. To build solutions that solved my own problems I needed to develop software on the platform I spend the most time.&lt;/p&gt;
-
-&lt;p&gt;As I was writing about my Ruby on Rails coding journey, I will begin to do that for Swift and iOS development. Writing technical blog posts is to help me better understand the concepts I’m learning and has been enormously helpful. It was the sole reason for taking the part-time work at Codecademy as an Advisor. The experience of helping people to fix a bug or point them on the right path is a blog post in itself and I’ve loved the experience so far. I’ll get to that another time. For now, expect to see this blog full of Swift and iOS development post.&lt;/p&gt;
-
-&lt;p&gt;Happy Coding&lt;/p&gt;
 </content>
   </entry>
 </feed>
