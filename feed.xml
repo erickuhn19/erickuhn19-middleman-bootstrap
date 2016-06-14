@@ -5,10 +5,40 @@
   <id>http://erickuhn19.com</id>
   <link href="http://erickuhn19.com"/>
   <link href="http://erickuhn19.com/feed.xml" rel="self"/>
-  <updated>2016-05-30T22:54:00-04:00</updated>
+  <updated>2016-06-13T20:44:00-04:00</updated>
   <author>
     <name>Eric Kuhn</name>
   </author>
+  <entry>
+    <title>App Store Changes</title>
+    <link rel="alternate" href="http://erickuhn19.com/app-store-changes/"/>
+    <id>http://erickuhn19.com/app-store-changes/</id>
+    <published>2016-06-13T20:44:00-04:00</published>
+    <updated>2016-06-13T21:21:31-04:00</updated>
+    <author>
+      <name>Eric Kuhn</name>
+    </author>
+    <content type="html">&lt;p&gt;This post comes a little late as I wrote it last week and the WWDC keynote was today.&lt;/p&gt;
+
+&lt;p&gt;Anyway! Ahead of WWDC, Phil Schiller broke news on changes to the app store with interviews to &lt;a href="http://www.theverge.com/2016/6/8/11880730/apple-app-store-subscription-update-phil-schiller-interview"&gt;The Verge&lt;/a&gt; and &lt;a href="http://daringfireball.net/2016/06/the_new_app_store"&gt;Daring Fireball&lt;/a&gt;. This move was quite interesting and after hearing the keynote I see why. Those two hours went by so fast! I’m glad the developer community had time to digest what this means for their business. So many awesome updates for from the keynote…for another post.&lt;/p&gt;
+
+&lt;h2 id="app-review"&gt;App Review&lt;/h2&gt;
+
+&lt;p&gt;First, Apple is acknowledging that app review times have been drastically better over the last few weeks. I covered this an a earlier blog post and it’s great news that Apple is actually committing to doing this for the foreseeable future. This is hands down a win for developers.&lt;/p&gt;
+
+&lt;h2 id="subscription-business-model"&gt;Subscription Business Model&lt;/h2&gt;
+
+&lt;p&gt;Subscription pricing is now open to all categories and after 12 months of paying for a subscription, the developer will now get 85% instead of 70%! It’s still a monumental task to have a user pay for 12+ months, but I’m glad to see Apple moving in this direction. Allowing developers to decide which business model fits for them is the right call, ultimately users will decide if they are willing to pay for a subscription if the app is continually providing value. and making the economics better.  regardless what type of app it is.&lt;/p&gt;
+
+&lt;p&gt;It will be interesting to see how this changes the economic landscape for indie developers. From a users perspective, what will the UX of paying for individual apps on a rolling basis be? There will be breaking point on how many subscription apps a person is willing to pay for. However, I think only a small number of apps will adopt this model and it will therefore have a net positive effect.&lt;/p&gt;
+
+&lt;h2 id="ads-in-search"&gt;Ads in Search&lt;/h2&gt;
+
+&lt;p&gt;Apple seems to be adamant that Ads in Search will not become like other ad exchanges and will be tightly controlled so the tool won’t be abused. I tend to agree it will be done in a tasteful manner. Looking past the potential downfalls, this is a great opportunity for a new app to break into a category where they wouldn’t be close to the top of search.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to seeing if these changes help the app store economics for indie developers.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Building a chat app with Firebase and Swift</title>
     <link rel="alternate" href="http://erickuhn19.com/building-a-chat-app-with-firebase-and-swift/"/>
@@ -164,33 +194,6 @@ self.remoteConfig = FIRRemoteConfig.remoteConfig()
 &lt;/blockquote&gt;
 
 &lt;p&gt;I'm surprised this move did not come sooner, as Microsoft has already realized the power of integrating itself into the keyboard. The SwiftKey aquisition was a telling sign that this space is going to start to heat up.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The not so obvious problem for iOS developers</title>
-    <link rel="alternate" href="http://erickuhn19.com/The-not-so-obvious-problem-for-iOS-developers/"/>
-    <id>http://erickuhn19.com/The-not-so-obvious-problem-for-iOS-developers/</id>
-    <published>2016-01-01T19:00:00-05:00</published>
-    <updated>2016-01-02T12:07:38-05:00</updated>
-    <author>
-      <name>Eric Kuhn</name>
-    </author>
-    <content type="html">&lt;p&gt;Recently my new company provided me with an 16GB iPhone 6S. I did everything in my power to circumvent this model, as I was using a iPhone 6 with 64GB at a 70% capacity. Switching to the 16GB seemed unfathomable. Since two iPhones in my pocket was not going to be an option, I told myself I would make this work. First, I needed to make some ground rules or this was going to be a disaster.&lt;/p&gt;
-
-&lt;p&gt;I started with creating a new phone and not installing my iCloud back up. I had 244 non-Apple apps on my phone and knew I needed to narrow this down. Only my most used apps were going to make the cut. This was a herculean challenge but a good exercise to think about what I was receiving the most value from. As of this writing I only downloaded 40 but I feel like I cut too many corners. One thing I had going for me is I don’t use any music on my phone since I use Spotify.&lt;/p&gt;
-
-&lt;p&gt;The most glaring problem I have with this new set up is my new trepidation to try out new apps. Is this a problem other people think about? In the past I would try out apps on a whim and keep them around even if it’s a one time use case. Now my new world view is drastically different because of the limited space. This makes me uncomfortable since I ‘m a Product Manager in the mobile space. Testing a large number of apps is part of the job description.&lt;/p&gt;
-
-&lt;p&gt;Now that I’ve given my personal account how this phone affects me. Let’s think about it in a broader context and what are the ripple effects for the ecosystem.&lt;/p&gt;
-
-&lt;p&gt;So I’ve read all the reports about the amount of apps the average person uses per day &lt;a href="http://techcrunch.com/2015/06/22/consumers-spend-85-of-time-on-smartphones-in-apps-but-only-5-apps-see-heavy-use/#.vyo3cp:5bJy"&gt;(5)&lt;/a&gt; and how many she will keep on her phone &lt;a href="http://mashable.com/2013/09/05/most-apps-download-countries/"&gt;(25)&lt;/a&gt;, but that is just data. The important question is why are people limiting their app consumption. Is it a personal preference or a choice they’re forced to make? This distinction is important as the app ecosystem’s vibrancy of new apps depends on it.&lt;/p&gt;
-
-&lt;p&gt;Let’s run with the idea that the vast majority of people own a 16GB iPhone. This is a safe assumption thanks to some data from the UK that says &lt;a href="http://www.businessinsider.com/iphone-storage-data-market-share-2014-12?r=UK&amp;amp;IR=T"&gt;91% of Telefonica users have the 16GB model.&lt;/a&gt;
-Let’s make another assumption and say the majority of those people run into a shortage of space on a frequent basis. If this is the case, then the obvious statement is Apple is not giving the user the best experience. The less obvious statement. App developers are experiencing a constraint in growth outside of their control.&lt;/p&gt;
-
-&lt;p&gt;Yes, Apple launched app thinning and reduced the size of OS updates. But that won’t solve the problem overnight. A simple thought experiment. If someone needed to choose between photos of their loved ones and the newest app. Which would they choose? The problem for app developers is, why do they have to?&lt;/p&gt;
-
-&lt;p&gt;This is an important observation as we increasingly rely on software to make improvements in our lives. As a Product Manager, it is more important than ever to bring real value to your users. Your not only competing for the user’s time and attention. You are competing for space on their phone.&lt;/p&gt;
 </content>
   </entry>
 </feed>
