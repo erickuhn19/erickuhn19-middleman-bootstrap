@@ -24,4 +24,4 @@ A minimum of two backups (external hard drive and BackBlaze) and a maximum of fo
 
 This will certainly evolve over time. Look forward to sharing when it does. I'll end with a photo of my amazing son Luca. 
 
-![Luca on July 4th](/images/Luca_7_4_16.JPG){:class="responsive-img"}
+![Luca on July 4th](/images/Luca_7_4_16.JPG){:class="responsive-img", :style='width:100%;'}
