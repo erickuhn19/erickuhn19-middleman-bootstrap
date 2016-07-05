@@ -14,7 +14,7 @@ The first thing I tried was taking all the photos and importing them into my Pho
 
 While looking for other options I remembered seeing a blog post by [Casey Liss](https://www.caseyliss.com/2016/5/29/photo-management) about his photo management process, which got me thinking. I seriously considered using his script but know it would have taken me a while to customize it to fit my own needs. So I started to research options that I could get up and running quicker (I had a hundred new photos on the SD card waiting to be backed up after the iCloud debacle). [The article Casey Liss was inspired by](http://www.leancrew.com/all-this/2013/10/photo-management-via-the-finder/) mentioned a Mac app called [Hazel](https://www.noodlesoft.com/). I downloaded the trial and set up a rule to move all photos from the SD card once inserted into the Mac to be moved into the external hard drive and create a folder for each date a picture was taken. It works like magic and when I pop in the SD card all the photos are instantly moved into the external drive and sorted by date with the file name being a date and then numbered in ascending order. The SD card is wiped clean, ready to take more photos. Looking forward to learning more about the power of Hazel, this [Mac Power User Podcast episode])https://www.relay.fm/mpu/322) is a good place to start. 
 
-![Screen shot of my Hazel rule](/images/hazel_screenshot.png)
+![Screen shot of my Hazel rule](/images/hazel_screenshot.png){:class="responsive-img"}
 
 So now I have all my DSLR photos on my external hard drive but not being backed up anywhere else. Side note, it would be ideal if the photos were to be put on my Mac's hard drive and then copied to the external but I'll have to wait to add that in to my workflow once I buy a new MacBook Pro with a tb+ of SSD. I've heard a lot of great things about [BackBlaze](https://www.backblaze.com/) and have been meaning to have a second backup of all my data and this was perfect timing. I signed up for BackBlaze and fully prepared to pay past the trial. For $5 a month to know I have all my data backed up from my Mac and external drive is worth it. 
 
@@ -24,4 +24,4 @@ A minimum of two backups (external hard drive and BackBlaze) and a maximum of fo
 
 This will certainly evolve over time. Look forward to sharing when it does. I'll end with a photo of my amazing son Luca. 
 
-![Luca on July 4th](/images/Luca_7_4_16.JPG)
+![Luca on July 4th](/images/Luca_7_4_16.JPG){:class="responsive-img"}
