@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://erickuhn19.com/photo-management-workflow/"/>
     <id>http://erickuhn19.com/photo-management-workflow/</id>
     <published>2016-07-04T20:53:00-04:00</published>
-    <updated>2016-07-04T21:13:19-04:00</updated>
+    <updated>2016-07-04T21:18:28-04:00</updated>
     <author>
       <name>Eric Kuhn</name>
     </author>
@@ -28,7 +28,7 @@
 
 &lt;p&gt;While looking for other options I remembered seeing a blog post by &lt;a href="https://www.caseyliss.com/2016/5/29/photo-management"&gt;Casey Liss&lt;/a&gt; about his photo management process, which got me thinking. I seriously considered using his script but know it would have taken me a while to customize it to fit my own needs. So I started to research options that I could get up and running quicker (I had a hundred new photos on the SD card waiting to be backed up after the iCloud debacle). &lt;a href="http://www.leancrew.com/all-this/2013/10/photo-management-via-the-finder/"&gt;The article Casey Liss was inspired by&lt;/a&gt; mentioned a Mac app called &lt;a href="https://www.noodlesoft.com/"&gt;Hazel&lt;/a&gt;. I downloaded the trial and set up a rule to move all photos from the SD card once inserted into the Mac to be moved into the external hard drive and create a folder for each date a picture was taken. It works like magic and when I pop in the SD card all the photos are instantly moved into the external drive and sorted by date with the file name being a date and then numbered in ascending order. The SD card is wiped clean, ready to take more photos. Looking forward to learning more about the power of Hazel, this [Mac Power User Podcast episode])https://www.relay.fm/mpu/322) is a good place to start.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Screen shot of my Hazel rule" src="/images/hazel_screenshot.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screen shot of my Hazel rule" class="responsive-img" src="/images/hazel_screenshot.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;So now I have all my DSLR photos on my external hard drive but not being backed up anywhere else. Side note, it would be ideal if the photos were to be put on my Mac's hard drive and then copied to the external but I'll have to wait to add that in to my workflow once I buy a new MacBook Pro with a tb+ of SSD. I've heard a lot of great things about &lt;a href="https://www.backblaze.com/"&gt;BackBlaze&lt;/a&gt; and have been meaning to have a second backup of all my data and this was perfect timing. I signed up for BackBlaze and fully prepared to pay past the trial. For $5 a month to know I have all my data backed up from my Mac and external drive is worth it.&lt;/p&gt;
 
@@ -38,7 +38,7 @@
 
 &lt;p&gt;This will certainly evolve over time. Look forward to sharing when it does. I'll end with a photo of my amazing son Luca.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Luca on July 4th" src="/images/Luca_7_4_16.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Luca on July 4th" class="responsive-img" src="/images/Luca_7_4_16.JPG" /&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
