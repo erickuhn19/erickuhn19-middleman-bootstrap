@@ -1,6 +1,6 @@
 ---
 title: Photo Management Workflow
-date: 2016-07-05 00:53 UTC
+date: 2016-07-04 00:53 UTC
 tags:
 ---
 
