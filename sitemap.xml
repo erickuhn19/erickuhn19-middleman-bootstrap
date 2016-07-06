@@ -49,6 +49,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>erickuhn19.git.io/life-lessons-part-1/</loc>
+    <lastmod>2016-07-05T23:11:14-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>erickuhn19.git.io/my-first-open-source-project-rails-blogger-engine/</loc>
     <lastmod>2015-07-26T17:44:06-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -56,7 +62,7 @@
   </url>
   <url>
     <loc>erickuhn19.git.io/photo-management-workflow/</loc>
-    <lastmod>2016-07-04T21:37:46-04:00</lastmod>
+    <lastmod>2016-07-05T23:11:28-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -188,6 +194,12 @@
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/07/05/</loc>
+    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/2016/07/04/</loc>
     <lastmod>2015-07-08T22:36:36-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
