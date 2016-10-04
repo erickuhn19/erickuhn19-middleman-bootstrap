@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/erickuhn19
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.erickuhn19.com
+  * I am erickuhn19 (https://keybase.io/erickuhn19) on keybase.
+  * I have a public key with fingerprint B312 AF97 E4F4 7B5C 94FA  7499 5754 EA3D AB3C E8EB
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01019ca5e53f670cddcecf91d949ffb3c1b5dfcf2b75b639b6d1ccfb7eea972554db0a",
+            "fingerprint": "b312af97e4f47b5c94fa74995754ea3dab3ce8eb",
+            "host": "keybase.io",
+            "key_id": "5754ea3dab3ce8eb",
+            "kid": "01019ca5e53f670cddcecf91d949ffb3c1b5dfcf2b75b639b6d1ccfb7eea972554db0a",
+            "uid": "9b772aa0f687e88614dd4cf92de85519",
+            "username": "erickuhn19"
+        },
+        "service": {
+            "hostname": "www.erickuhn19.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1475605282,
+    "expire_in": 157680000,
+    "prev": "a9a38ac9f73022f2665fd4bc8e6bc2c6abeb79d64b8d95e8e50456a949a0221e",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMImAnicrZJLSFVBGICv5qMs6bEwWpRxLFDQy3nNmTM3I9pYQVJG0SLlOq9zPXm9
+53ofPjClDOwJhfZQ6WFSVJAULdRc5aNaSBJGBQa60CLJytBFCEVzxGjTstkM88/3
+f/P/PzOUvsyTlvCwbXXXj92TRQnD/TfinsNzc1KdRBxWK/nqpHK+uPEg49GYv9xm
+kk+SFVlBFAMONMuAMmWMcmohhSEdWRbRqEIAs6ilEgiIoSFiMIVSi0DOMYIqADoj
+MpZyJcsOBXgkHLFDMaElmqJiC0GuWzokgCLdwlBHCECgc6wxLMzc5EQkljlRN0MU
+R3CUe21HxMTBv1jeP/j/XHd8UYcIhCrGsmWYkJumoeiM6cKnMm4CoCAXjPJICFdw
+QfOITcvjZSERr8+VRLzKptwdrdvLElNdXe39y3mpUyEc4YgTc6gTFPdlsVjY56bH
+asOLPCf+JZOf2CEmxikSqngkajshyacIksZsV63oEBgyUE01V+I1YTvC/bZLAGiY
+sljuM7xKKDHCmokpsqAmq6qlGgawmE6oyQ1CVWpgwglEzNCJyRAQ4wWyDgwsJogF
+r3DJ7a0y5Eg+XZSJA0IZtQMhHItHuFQ/8LQ4yZOQ5klJTnS/mSdtxZo/ny+Qmvor
+715iUctyONAOerclFrafKi1t63u3+tvx+Z/5qid71us92zPvL7segK27Poy+P9VZ
+0313K0yf/n7uxuP9p5/PWG+Lz5SsG0068iqreeJ0g7Zx364rmTm3GvZMbs96Eh8L
+jvRnxenEeF/hQscaA5F8vzZt3kbDLbOXe5taaxfa+/Ne7swe37H+Bb3Zeb/3yPPX
+W84XVh771Hxwg3Oucmro0oHUsXUlV98sPMhOPLkvXx5+v6cpo35mPm+T/PnaiK+p
+uCDz/rHd3VJKanJ1X+GjgsaeirUHWoPddsFcjrE+uGqqfbDuxMXBZxnRqaqKT6q3
+6NCGzUe/flx5tevLhY6aib2Nd34Dhv1IIg==
+=OTy+
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/erickuhn19
+
+==================================================================
+
