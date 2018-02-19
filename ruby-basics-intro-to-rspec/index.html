@@ -156,11 +156,10 @@ require_relative 'dog'</p>
       @dog = Dog.new("dexter")
     end</p>
 
-<pre class="highlight plaintext"><code>it "has a default energy of 100" do
+<div class="highlight"><pre class="highlight plaintext"><code>it "has a default energy of 100" do
   expect(@dog.energy).to eq(100)
 end   end end ```
-</code></pre>
-
+</code></pre></div>
 <p>The first thing this RSpec file needs to do is require the file we are testing, the dog.rb file. Then on line 3 we start using the basic structure of the testing framework which is supposed to express concepts like a conversation. I translate this first line into “Please describe the Class of Dog doing these things”.</p>
 
 <p>The block of code that starts on line 4 runs before each testing scenario that starts with “it”. This “before do” basically creates the environment for us to test a specific use case. Instead of typing out this each time we run a scenario it can automatically run for each test case. This conforms to the DRY principle in programming, or Don’t Repeat Yourself.</p>

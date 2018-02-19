@@ -1,428 +1,428 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>erickuhn19.git.io/about/</loc>
-    <lastmod>2015-12-06T18:36:20-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/app-store-changes/</loc>
-    <lastmod>2016-06-13T21:21:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/apple-shortens-app-review-times/</loc>
-    <lastmod>2016-05-14T13:05:15-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/building-a-chat-app-with-firebase-and-swift/</loc>
-    <lastmod>2016-05-30T22:55:49-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/Gboard/</loc>
-    <lastmod>2016-05-12T12:08:18-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/going-mobile/</loc>
-    <lastmod>2015-09-18T16:12:03-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/google-io-2016-thoughts/</loc>
-    <lastmod>2016-05-22T22:04:46-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/hello-world/</loc>
-    <lastmod>2015-07-12T17:19:29-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/life-lessons-part-1/</loc>
-    <lastmod>2016-07-05T23:14:45-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/my-first-open-source-project-rails-blogger-engine/</loc>
-    <lastmod>2015-07-26T17:44:06-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/photo-management-workflow/</loc>
-    <lastmod>2016-07-05T23:11:28-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/podcasts-im-listening-to-now/</loc>
-    <lastmod>2015-07-26T17:33:15-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/ruby-basics-classes-instance-variables-and-initialize/</loc>
-    <lastmod>2015-07-26T17:49:33-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/ruby-basics-double-quoted-strings/</loc>
-    <lastmod>2015-07-26T17:45:48-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/ruby-basics-intro-to-rspec/</loc>
-    <lastmod>2015-07-26T17:51:23-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/ruby-basics-puts-yo-self/</loc>
-    <lastmod>2015-07-26T17:47:14-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/scaffold-and-devise-the-hard-way/</loc>
-    <lastmod>2015-07-26T17:35:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/so-coinbase-is-shutting-down-their-tip-button/</loc>
-    <lastmod>2015-07-26T17:29:50-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/solving-customer-problems-in-payments/</loc>
-    <lastmod>2016-05-17T22:03:38-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/stop-breaking-your-workflow-meet-dash-the-documentation-app-for-mac/</loc>
-    <lastmod>2015-07-26T17:37:06-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/The-not-so-obvious-problem-for-iOS-developers/</loc>
-    <lastmod>2016-01-02T12:07:38-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/tip-online-with-bitcoin/</loc>
-    <lastmod>2015-07-26T17:27:50-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/Website-Redesign-in-Middleman/</loc>
-    <lastmod>2015-08-02T14:36:39-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>erickuhn19.git.io/why-i-made-my-blog-using-ruby-on-rails/</loc>
-    <lastmod>2015-07-26T17:26:27-04:00</lastmod>
+    <loc>erickuhn19.git.io/</loc>
+    <lastmod>2018-02-18T21:26:50-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/blog/</loc>
-    <lastmod>2015-07-26T18:07:05-04:00</lastmod>
+    <lastmod>2015-07-26T23:07:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/contact/</loc>
-    <lastmod>2015-07-28T14:15:33-04:00</lastmod>
+    <lastmod>2018-02-15T22:19:50-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>erickuhn19.git.io/</loc>
-    <lastmod>2015-12-10T21:38:24-05:00</lastmod>
+    <loc>erickuhn19.git.io/tip-online-with-bitcoin/</loc>
+    <lastmod>2015-07-26T22:27:50-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>erickuhn19.git.io/partials/footer/</loc>
-    <lastmod>2015-09-18T16:10:42-04:00</lastmod>
+    <loc>erickuhn19.git.io/ruby-basics-puts-yo-self/</loc>
+    <lastmod>2015-07-26T22:47:14-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>erickuhn19.git.io/partials/nav/</loc>
-    <lastmod>2015-07-19T17:23:21-04:00</lastmod>
+    <loc>erickuhn19.git.io/Gboard/</loc>
+    <lastmod>2016-05-12T17:08:18-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/podcasts-im-listening-to-now/</loc>
+    <lastmod>2015-07-26T22:33:14-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/photo-management-workflow/</loc>
+    <lastmod>2016-07-06T04:11:28-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/stop-breaking-your-workflow-meet-dash-the-documentation-app-for-mac/</loc>
+    <lastmod>2015-07-26T22:37:06-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/ruby-basics-classes-instance-variables-and-initialize/</loc>
+    <lastmod>2015-07-26T22:49:32-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/apple-shortens-app-review-times/</loc>
+    <lastmod>2016-05-14T18:05:14-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/app-store-changes/</loc>
+    <lastmod>2016-06-14T02:21:30-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/life-lessons-part-1/</loc>
+    <lastmod>2016-07-06T04:14:44-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/scaffold-and-devise-the-hard-way/</loc>
+    <lastmod>2015-07-26T22:35:08-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/ruby-basics-double-quoted-strings/</loc>
+    <lastmod>2015-07-26T22:45:48-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/why-i-made-my-blog-using-ruby-on-rails/</loc>
+    <lastmod>2015-07-26T22:26:26-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/building-a-chat-app-with-firebase-and-swift/</loc>
+    <lastmod>2016-05-31T03:55:48-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/Website-Redesign-in-Middleman/</loc>
+    <lastmod>2015-08-02T19:36:38-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/The-not-so-obvious-problem-for-iOS-developers/</loc>
+    <lastmod>2016-01-02T17:07:38-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/hello-world/</loc>
+    <lastmod>2015-07-12T22:19:28-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/my-first-open-source-project-rails-blogger-engine/</loc>
+    <lastmod>2015-07-26T22:44:06-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/so-coinbase-is-shutting-down-their-tip-button/</loc>
+    <lastmod>2015-07-26T22:29:50-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/google-io-2016-thoughts/</loc>
+    <lastmod>2016-05-23T03:04:46-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/solving-customer-problems-in-payments/</loc>
+    <lastmod>2016-05-18T03:03:38-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/going-mobile/</loc>
+    <lastmod>2015-09-18T21:12:02-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/ruby-basics-intro-to-rspec/</loc>
+    <lastmod>2015-07-26T22:51:22-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/thanks/</loc>
-    <lastmod>2015-07-26T15:15:10-04:00</lastmod>
+    <lastmod>2015-07-26T20:15:10-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/about/</loc>
+    <lastmod>2018-02-18T20:49:50-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/partials/footer/</loc>
+    <lastmod>2015-09-18T21:10:42-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>erickuhn19.git.io/partials/nav/</loc>
+    <lastmod>2015-07-19T22:23:20-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/07/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/07/05/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/07/04/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/06/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/06/14/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/05/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/05/31/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/05/23/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/05/18/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/05/14/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/05/12/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/01/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/01/02/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/09/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/09/18/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/08/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/08/02/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/04/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/04/13/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/04/11/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/04/09/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/04/04/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/03/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/03/07/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/03/04/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/02/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/02/28/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/02/11/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/01/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/01/24/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/01/10/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/01/03/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/blog/page/2/</loc>
-    <lastmod>2015-07-26T18:07:05-04:00</lastmod>
+    <lastmod>2015-07-26T23:07:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/blog/page/3/</loc>
-    <lastmod>2015-07-26T18:07:05-04:00</lastmod>
+    <lastmod>2015-07-26T23:07:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/blog/page/4/</loc>
-    <lastmod>2015-07-26T18:07:05-04:00</lastmod>
+    <lastmod>2015-07-26T23:07:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/blog/page/5/</loc>
-    <lastmod>2015-07-26T18:07:05-04:00</lastmod>
+    <lastmod>2015-07-26T23:07:04-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2016/page/2/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/page/2/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>erickuhn19.git.io/2015/page/3/</loc>
-    <lastmod>2015-07-08T22:36:36-04:00</lastmod>
+    <lastmod>2015-07-09T03:36:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
